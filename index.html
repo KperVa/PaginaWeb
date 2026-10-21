@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nébula Studio transforma ideas en experiencias digitales memorables."
+    />
+    <meta name="theme-color" content="#f5f4ef" />
+    <title>Nébula Studio — Ideas que toman forma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Nébula Studio, inicio">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span>nébula<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a class="nav-cta" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
+      </nav>
+
+      <div class="digital-clock" role="timer" aria-label="Reloj digital" aria-live="off">
+        <div class="digital-display" aria-hidden="true">
+          <span class="clock-digit" data-value="0">
+            <i class="segment segment-a"></i><i class="segment segment-b"></i>
+            <i class="segment segment-c"></i><i class="segment segment-d"></i>
+            <i class="segment segment-e"></i><i class="segment segment-f"></i>
+            <i class="segment segment-g"></i>
+          </span>
+          <span class="clock-digit" data-value="0">
+            <i class="segment segment-a"></i><i class="segment segment-b"></i>
+            <i class="segment segment-c"></i><i class="segment segment-d"></i>
+            <i class="segment segment-e"></i><i class="segment segment-f"></i>
+            <i class="segment segment-g"></i>
+          </span>
+          <span class="clock-colon"><i></i><i></i></span>
+          <span class="clock-digit" data-value="0">
+            <i class="segment segment-a"></i><i class="segment segment-b"></i>
+            <i class="segment segment-c"></i><i class="segment segment-d"></i>
+            <i class="segment segment-e"></i><i class="segment segment-f"></i>
+            <i class="segment segment-g"></i>
+          </span>
+          <span class="clock-digit" data-value="0">
+            <i class="segment segment-a"></i><i class="segment segment-b"></i>
+            <i class="segment segment-c"></i><i class="segment segment-d"></i>
+            <i class="segment segment-e"></i><i class="segment segment-f"></i>
+            <i class="segment segment-g"></i>
+          </span>
+        </div>
+      </div>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero section-shell" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Estudio creativo digital</p>
+          <h1>Ideas que<br />toman <span>forma.</span></h1>
+          <p class="hero-description">
+            Diseñamos marcas y experiencias digitales para quienes quieren hacer las cosas
+            de otra manera.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#proyectos">
+              Explora nuestro trabajo <span aria-hidden="true">↗</span>
+            </a>
+            <a class="text-link" href="#nosotros">Conócenos <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-avatars" aria-hidden="true"><i>M</i><i>L</i><i>A</i></span>
+            <span>Un equipo pequeño, ideas enormes.</span>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Composición abstracta de colores">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-sun"></div>
+          <div class="art-card">
+            <span class="art-card-label">EST. 2021</span>
+            <span class="art-card-symbol" aria-hidden="true">✳</span>
+            <span class="art-card-caption">Imagina<br />sin límites.</span>
+          </div>
+          <span class="art-side-note">Diseño con intención · Madrid / En todas partes</span>
+          <span class="art-star star-one" aria-hidden="true">✳</span>
+          <span class="art-star star-two" aria-hidden="true">✦</span>
+        </div>
+        <a class="scroll-hint" href="#servicios"><span></span> Desliza para descubrir</a>
+      </section>
+
+      <section class="services section-shell" id="servicios">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> Lo que hacemos</p>
+            <h2>De la primera idea<br />al <span>gran impacto.</span></h2>
+          </div>
+          <p class="section-intro">
+            Combinamos estrategia, diseño y tecnología para crear cosas que funcionan y
+            también se sienten.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-number">01 /</span>
+            <span class="service-icon icon-brand" aria-hidden="true">◉</span>
+            <h3>Identidad de marca</h3>
+            <p>Marcas con personalidad propia, listas para dejar huella.</p>
+            <a href="#contacto" aria-label="Consultar sobre identidad de marca">↗</a>
+          </article>
+          <article class="service-card">
+            <span class="service-number">02 /</span>
+            <span class="service-icon icon-digital" aria-hidden="true">▱</span>
+            <h3>Diseño digital</h3>
+            <p>Experiencias web intuitivas que convierten visitas en conexiones.</p>
+            <a href="#contacto" aria-label="Consultar sobre diseño digital">↗</a>
+          </article>
+          <article class="service-card">
+            <span class="service-number">03 /</span>
+            <span class="service-icon icon-strategy" aria-hidden="true">✳</span>
+            <h3>Estrategia creativa</h3>
+            <p>Una dirección clara para que cada decisión tenga sentido.</p>
+            <a href="#contacto" aria-label="Consultar sobre estrategia creativa">↗</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="work-section" id="proyectos">
+        <div class="section-shell work-inner">
+          <div class="section-heading work-heading">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-line"></span> Selección de proyectos</p>
+              <h2>Hecho con cariño.<br /><span>Hecho para durar.</span></h2>
+            </div>
+            <a class="text-link" href="#contacto">¿El próximo? <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <div class="project-grid">
+            <a class="project-card project-one" href="#contacto">
+              <div class="project-visual project-visual-one">
+                <span class="project-wordmark">bloom<span>®</span></span>
+                <span class="project-flower" aria-hidden="true">✿</span>
+                <span class="project-tag">Identidad · Packaging</span>
+              </div>
+              <div class="project-meta">
+                <h3>Bloom Natural</h3>
+                <span>2024 <span aria-hidden="true">↗</span></span>
+              </div>
+            </a>
+            <a class="project-card project-two" href="#contacto">
+              <div class="project-visual project-visual-two">
+                <span class="project-wordmark project-wordmark-light">otra<span>forma</span></span>
+                <span class="project-shape" aria-hidden="true"></span>
+                <span class="project-tag">Estrategia · Web</span>
+              </div>
+              <div class="project-meta">
+                <h3>Otra Forma</h3>
+                <span>2023 <span aria-hidden="true">↗</span></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section-shell" id="nosotros">
+        <div class="about-mark" aria-hidden="true">n<span>.</span></div>
+        <div class="about-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Un poco de nosotros</p>
+          <h2>Creemos en las buenas ideas y en <span>hacerlas realidad.</span></h2>
+          <p>
+            Somos un estudio independiente que trabaja codo a codo con personas y equipos
+            con ganas de construir algo especial. Sin fórmulas mágicas: curiosidad,
+            colaboración y mucho cuidado en cada detalle.
+          </p>
+          <a class="button button-outline" href="#contacto">Así trabajamos <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="contact section-shell" id="contacto">
+        <p class="eyebrow"><span class="eyebrow-line"></span> ¿Tienes algo en mente?</p>
+        <h2>Hagamos que<br />suceda <span>juntos.</span></h2>
+        <a class="button button-light" href="mailto:hola@nebulastudio.example">
+          Cuéntanos tu idea <span aria-hidden="true">↗</span>
+        </a>
+        <span class="contact-spark" aria-hidden="true">✳</span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#inicio">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span>nébula<span class="brand-dot">.</span></span>
+      </a>
+      <p>Ideas con intención. Diseño con alma.</p>
+      <span>© <span id="year"></span> Nébula Studio</span>
+    </footer>
+  </body>
+</html>
