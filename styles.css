@@ -1,9 +1,11 @@
 :root {
   color-scheme: light;
   --ink: #20201e;
-  --muted: #74736d;
+  --text-blue: #8fb7e8;
+  --muted: #7893b8;
   --paper: #f5f4ef;
   --lime: #d8f064;
+  --leaf-green: #76a94b;
   --coral: #f4775b;
   --purple: #7762c6;
   --line: rgba(32, 32, 30, 0.14);
@@ -24,7 +26,7 @@ html {
 body {
   margin: 0;
   background: var(--paper);
-  color: var(--ink);
+  color: var(--text-blue);
 }
 
 a {
@@ -191,7 +193,7 @@ a {
 
 .site-nav > a:not(.nav-cta):hover,
 .text-link:hover {
-  color: var(--purple);
+  color: #b8cdef;
 }
 
 .nav-cta {
@@ -267,7 +269,7 @@ h3 {
 .section-heading h2 span,
 .about h2 span,
 .contact h2 span {
-  color: var(--purple);
+  color: var(--leaf-green);
 }
 
 .hero-description {
@@ -304,7 +306,7 @@ h3 {
 
 .button-dark {
   background: var(--ink);
-  color: white;
+  color: var(--text-blue);
 }
 
 .button-dark:hover {
@@ -343,7 +345,7 @@ h3 {
   border: 2px solid var(--paper);
   border-radius: 50%;
   background: var(--coral);
-  color: var(--ink);
+  color: var(--text-blue);
   font-size: 8px;
   font-style: normal;
   font-weight: 700;
@@ -754,7 +756,7 @@ h3 {
   justify-content: center;
   overflow: hidden;
   background: var(--ink);
-  color: var(--paper);
+  color: var(--text-blue);
   text-align: center;
 }
 
@@ -781,7 +783,7 @@ h3 {
 }
 
 .contact .eyebrow {
-  color: #aaa9a3;
+  color: var(--muted);
 }
 
 .contact h2 {
@@ -790,13 +792,9 @@ h3 {
   line-height: 1;
 }
 
-.contact h2 span {
-  color: var(--lime);
-}
-
 .button-light {
   background: var(--lime);
-  color: var(--ink);
+  color: var(--text-blue);
 }
 
 .button-light:hover {
