@@ -51,7 +51,3 @@ function updateDigitalClock() {
 
 updateDigitalClock();
 setInterval(updateDigitalClock, 1000);
-
-
-
-
