@@ -2,6 +2,9 @@ const menuToggle = document.querySelector(".menu-toggle");
 const siteNav = document.querySelector(".site-nav");
 const digitalClock = document.querySelector(".digital-clock");
 const clockDigits = [...document.querySelectorAll(".clock-digit")];
+const visitCounter = document.querySelector(".visit-counter");
+const visitCounterBadge = document.querySelector(".visit-counter-badge");
+const visitCounterStatus = document.querySelector("#visit-counter-status");
 const digitSegments = [
   "abcdef",
   "bc",
@@ -51,3 +54,23 @@ function updateDigitalClock() {
 
 updateDigitalClock();
 setInterval(updateDigitalClock, 1000);
+
+function showVisitCounterError() {
+  visitCounter.dataset.state = "error";
+  visitCounterBadge.hidden = true;
+  visitCounterStatus.textContent = "No se pudo cargar el contador global.";
+  visitCounterStatus.hidden = false;
+}
+
+if (visitCounterBadge.complete) {
+  if (visitCounterBadge.naturalWidth === 0) {
+    showVisitCounterError();
+  } else {
+    visitCounter.dataset.state = "ready";
+  }
+} else {
+  visitCounterBadge.addEventListener("load", () => {
+    visitCounter.dataset.state = "ready";
+  });
+  visitCounterBadge.addEventListener("error", showVisitCounterError);
+}

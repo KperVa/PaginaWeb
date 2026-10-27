@@ -95,19 +95,36 @@
           </div>
         </div>
 
-        <div class="hero-art" aria-label="Composición abstracta de colores">
-          <div class="art-orbit orbit-one"></div>
-          <div class="art-orbit orbit-two"></div>
-          <div class="art-sun"></div>
-          <div class="art-card">
-            <span class="art-card-label">EST. 2021</span>
-            <span class="art-card-symbol" aria-hidden="true">✳</span>
-            <span class="art-card-caption">Imagina<br />sin límites.</span>
-          </div>
-          <span class="art-side-note">Diseño con intención · Madrid / En todas partes</span>
-          <span class="art-star star-one" aria-hidden="true">✳</span>
-          <span class="art-star star-two" aria-hidden="true">✦</span>
-        </div>
+        <figure class="hero-art">
+          <img
+            class="hero-art-image"
+            src="assets/alhambra-sierra-nevada.jpg"
+            alt="La Alhambra de Granada con Sierra Nevada nevada al fondo."
+            fetchpriority="high"
+          />
+          <figcaption class="hero-art-caption">
+            <span class="hero-art-location">Granada · Andalucía</span>
+            <span class="hero-art-credit">
+              Foto:
+              <a href="https://commons.wikimedia.org/wiki/User:Adam63" target="_blank" rel="noopener noreferrer">
+                Adam Jones, Ph.D.
+              </a>
+              ·
+              <a
+                href="https://commons.wikimedia.org/wiki/File:View_of_the_Alhambra_and_Sierra_Nevada_-_Granada_-_Spain.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Wikimedia Commons
+              </a>
+              ·
+              <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">
+                CC BY-SA 3.0
+              </a>
+              · Redimensionada y encuadrada para web.
+            </span>
+          </figcaption>
+        </figure>
         <a class="scroll-hint" href="#servicios"><span></span> Desliza para descubrir</a>
       </section>
 
@@ -215,6 +232,27 @@
         <span>nébula<span class="brand-dot">.</span></span>
       </a>
       <p>Ideas con intención. Diseño con alma.</p>
+      <div class="visit-counter" data-state="loading" aria-labelledby="visit-counter-label">
+        <p class="visit-counter-label" id="visit-counter-label">Visitas a esta página</p>
+        <img
+          class="visit-counter-badge"
+          src="https://hits.dwyl.com/nebulastudio/pagina-web-copilot-github.svg?style=flat-square"
+          alt="Contador global de visitas mostrado como imagen; la cifra no está disponible en texto."
+          referrerpolicy="no-referrer"
+        />
+        <p class="visit-counter-note">
+          <a href="https://github.com/dwyl/hits" target="_blank" rel="noopener noreferrer">Hits (dwyl)</a>
+          recibe tu dirección IP y la información del navegador para deduplicar visitas.
+        </p>
+        <p
+          class="visit-counter-status"
+          id="visit-counter-status"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+          hidden
+        ></p>
+      </div>
       <span>© <span id="year"></span> Nébula Studio</span>
     </footer>
   </body>
