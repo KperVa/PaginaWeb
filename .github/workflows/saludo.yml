@@ -1,0 +1,11 @@
+name: Saludo
+
+on:
+  push:
+
+jobs:
+  saludar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Saludar por consola
+        run: echo "¡Hola, Carlos! ¿en qué puedo ayudarte?"
